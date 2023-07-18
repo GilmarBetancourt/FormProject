@@ -1,0 +1,37 @@
+
+body, .image-sidebar {
+    
+    font-family: 'Yatra One', cursive;
+    font-size: 16px;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    margin:0;
+  }
+
+  .page-columns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #first-column{
+    width:40%;
+    height:100vh;
+    background-image: url("patrick-slade-tuomgxdoIP4-unsplash.jpg");
+    background-size: 100% 100%;
+
+  }
+
+  #second-column{
+    height:100%;
+    width: 60%;
+    flex-direction: column;
+  }
+
+  .image-sidebar{
+    background-color: rgb(0,0,0,0.2);
+    width: 100%;
+    justify-content: center;
+  }
+
