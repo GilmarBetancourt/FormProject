@@ -7,7 +7,7 @@ body, .image-sidebar {
     display:flex;
     align-items: center;
     margin:0;
-    background-color:rgb(248, 241, 231);
+    background-color:rgb(255, 250, 245);
   }
 
   .page-columns{
@@ -33,7 +33,7 @@ body, .image-sidebar {
   }
 
   #second-column{
-    padding: 1.5rem;
+    
     height:100%;
     width: 60%;
     flex-direction: column;
@@ -42,16 +42,15 @@ body, .image-sidebar {
   }
 
 
-  fieldset{
-    padding: 1.5rem;
+  .form-field{
+    background-color: white;
     display: flex;
-	  justify-content: flex-start;
-	  flex-direction: column;
 	  flex-wrap: wrap;
-    
+    padding: 1.5rem;
+    box-shadow: 5px 5px 5px lightgray;
   }
 
-  fieldset input{
+  .form-field input{
     margin:0.5rem;
   }
 
@@ -60,3 +59,37 @@ body, .image-sidebar {
     
   }
 
+  .head-section, .heading, .login-text{
+    margin-left: 1.5rem;
+  }
+
+  button {
+    box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+    background-color:#ffc477;
+    border-radius:6px;
+    border:1px solid #eeb44f;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #cc9f52;
+    margin:1.5rem 0 1rem 1.5rem;
+
+  }
+  button:hover {
+    background:linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+    background-color:#fb9e25;
+  }
+  button:active {
+    position:relative;
+    top:1px;
+  }
+  
+.form-field div{
+  flex-basis:50%;
+}
