@@ -6,6 +6,7 @@
 
     <title>Fake Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
      
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,7 @@
             <p class="head-text">Sign up to know more about cats.</p>
         </section>
         <section class="form-section">
-            <form action="" method="get" class="register-form">
+            <form onsubmit="return false" action="" method="get" class="register-form">
                 <div class="heading">
                     <h1>Thanks for registering.</h1>
                 </div>
@@ -50,16 +51,17 @@
 
                     <div class='form-row'>
                         <label for='password'>Password</label><br>
-                        <input id='password' name='password' type='password' required/>
+                        <input id='password' name='password' type='password' minlength="4" required/>
+                        <p id="error-message">*Passwords do not match</p>
                     </div>
 
                     <div class='form-row'>
                         <label for='confirm-password'>Confirm Password</label><br>
-                        <input id='confirm-password' name='confirm-password' type='password'required/>
+                        <input id='confirm-password' name='confirm-password' type='password' minlength="4" required/>
                     </div>
                 </div>
                 <div class='form-row'>
-                    <button>Create Account</button>
+                    <button onclick="validatepasswords()">Create Account</button>
                 </div>
             </form>
             <p class="login-text">Already have an account? <a href="#">Log in</a></p>
