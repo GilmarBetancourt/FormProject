@@ -14,15 +14,12 @@ body, .image-sidebar {
     display: flex;
   }
 
-
   #first-column{
-    
-    width:40%;
+    width:30%;
     height:100vh;
     background-image: url("patrick-slade-tuomgxdoIP4-unsplash.jpg");
     background-size: 100% 100%;
-    align-items: center;
-
+    
   }
 
   .image-sidebar{
@@ -30,12 +27,13 @@ body, .image-sidebar {
     width: 100%;
     justify-content: center;
     background-color: rgb(0, 0, 0, 0.2);
+    margin-top: 40%;
   }
 
   #second-column{
     
     height:100%;
-    width: 60%;
+    width: 70%;
     flex-direction: column;
     justify-content: flex-start;
     
@@ -50,8 +48,26 @@ body, .image-sidebar {
     box-shadow: 5px 5px 5px lightgray;
   }
 
-  .form-field input{
-    margin:0.5rem;
+
+
+  input{
+    border: 1px solid lightgrey;
+    margin: 0 0 0.7rem 0.5rem;
+    font-size: 18px;
+    border-radius:3px;
+  }
+
+  input:focus{
+    outline-color:rgb(110, 110, 250);
+    box-shadow: 3px 3px 3px lightgray;
+
+  }
+
+  label{
+    font-size: 0.9rem;
+    font-weight: lighter;
+    color:rgb(101, 99, 99);
+    padding-left: 0.5rem;
   }
 
   .form-section{
@@ -60,7 +76,11 @@ body, .image-sidebar {
   }
 
   .head-section, .heading, .login-text{
-    margin-left: 1.5rem;
+    margin-left: 1.9rem;
+  }
+
+  .heading{
+    color:rgb(81, 81, 81);
   }
 
   button {
@@ -78,7 +98,7 @@ body, .image-sidebar {
     padding:6px 24px;
     text-decoration:none;
     text-shadow:0px 1px 0px #cc9f52;
-    margin:1.5rem 0 1rem 1.5rem;
+    margin:1.5rem 0 1rem 1.9rem;
 
   }
   button:hover {
@@ -90,6 +110,16 @@ body, .image-sidebar {
     top:1px;
   }
   
-.form-field div{
-  flex-basis:50%;
+/*These are to distribute the inputs in two columns*/
+.form-field > div:nth-child(odd){
+  flex: 1 1 30%;
+}
+
+.form-field > div:nth-child(even){
+  flex: 1 1 60%;
+}
+
+a:link{
+  color:#f7a336;
+  text-decoration:none;
 }
